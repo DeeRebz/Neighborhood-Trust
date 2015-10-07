@@ -1,0 +1,539 @@
+#take-action {
+  min-height: 980px; }
+  #take-action #this-week {
+    width: 900px;
+    margin-right: 30px; }
+    #take-action #this-week #action-items .action-item {
+      height: 100px; }
+      #take-action #this-week #action-items .action-item a.action-button {
+        top: 40px;
+        margin-right: -30px; }
+  #take-action h2 {
+    font-size: 28px;
+    font-family: "Gotham Medium", Proxima Nova, sans-serif;
+    color: #666666;
+    float: left;
+    margin-top: 0px; }
+  #take-action #sidebar {
+    width: 236px;
+    margin-top: 60px;
+    background-image: url("../images/blue-ribbon-bg.png");
+    background-repeat: no-repeat; }
+
+#silver-medal-box {
+  position: relative;
+  float: left;
+  height: 245px;
+  padding: 0px 10px 0px 15px;
+  margin-bottom: 20px; }
+  #silver-medal-box #silver-medal-top h5 {
+    font-family: "Gotham Bold", Proxima Nova, sans-serif;
+    font-size: 18px;
+    margin-bottom: 0px;
+    color: white; }
+  #silver-medal-box #silver-medal-top span {
+    font-size: 11px;
+    color: white; }
+  #silver-medal-box #silver-medal-progress {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 30px;
+    width: 180px;
+    color: #666666; }
+
+#filters {
+  position: relative;
+  float: left;
+  margin-top: 20px;
+  margin-left: 0px;
+  width: 215px; }
+  #filters h6 {
+    color: #666666;
+    font-family: "Gotham Medium", Proxima Nova, sans-serif;
+    font-size: 24px;
+    float: left;
+    margin: 0px 5px 20px 0px; }
+  #filters #filter-clear {
+    float: right;
+    font-family: "Gotham Medium", Proxima Nova, sans-serif;
+    font-size: 15px;
+    color: #3a83d6;
+    margin-top: 5px; }
+  #filters ul {
+    list-style: none;
+    padding-left: 0px;
+    /* Display Dropdowns on Hover */
+    /* Fisrt Tier Dropdown */ }
+    #filters ul .filter-item {
+      clear: both;
+      width: 185px;
+      height: 10px;
+      margin-bottom: 10px;
+      background-color: white;
+      padding: 15px;
+      font-family: "Gotham Medium", Proxima Nova, sans-serif;
+      font-size: 16;
+      color: #666666;
+      box-shadow: 0 0 6px #c3c3c3;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -ms-border-radius: 7px;
+      border-radius: 7px; }
+      #filters ul .filter-item a.filter-item-text {
+        font-family: "Gotham Medium", Proxima Nova, sans-serif;
+        font-size: 16px;
+        color: #666666;
+        text-decoration: none;
+        width: 170px; }
+      #filters ul .filter-item img {
+        float: right; }
+    #filters ul ul {
+      display: none;
+      position: absolute;
+      padding-left: 0;
+      margin-top: 10px;
+      width: 185px; }
+      #filters ul ul a {
+        text-decoration: none;
+        color: #666666; }
+        #filters ul ul a li {
+          width: 185px;
+          background-color: white;
+          padding: 10px;
+          float: none;
+          margin-left: -10px;
+          position: relative;
+          font-size: 14px;
+          display: block;
+          border: 1px solid #f3f3f3;
+          box-shadow: 0 0 2px #666666; }
+    #filters ul li:hover > ul {
+      display: list-item; }
+  #filters .selected-filter {
+    border: 1px solid #ef3e42;
+    margin-left: -1px;
+    color: #ef3e42; }
+
+.container {
+  max-width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  position: relative; }
+
+#login {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background-color: #ef3e42; }
+  #login ul {
+    width: 100%;
+    padding: 15px 0 10px 0;
+    margin: 0 auto; }
+    #login ul li {
+      display: inline-block;
+      vertical-align: top;
+      list-style: none;
+      font-weight: normal;
+      float: right; }
+    #login ul :first-child {
+      font-family: "Gotham Medium", Proxima Nova, sans-serif;
+      font-size: 13px;
+      color: white;
+      float: left; }
+      #login ul :first-child a {
+        text-decoration: none; }
+      #login ul :first-child img {
+        margin-left: 5px; }
+    #login ul :nth-child(6) {
+      color: white;
+      font-size: 12px;
+      font-family: "Gotham Bold", Proxima Nova, sans-serif;
+      margin: 0 10px 0 10px; }
+    #login ul :nth-child(4), #login ul :nth-child(5) {
+      color: #fff7a3;
+      text-decoration: underline;
+      font-size: 12px;
+      font-family: "Gotham Bold", Proxima Nova, sans-serif;
+      margin: 0 10px 0 10px; }
+    #login ul :nth-child(3) {
+      margin: -10px 10px 0 10px; }
+    #login ul :nth-child(2) {
+      margin-top: -20px; }
+
+#nav {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  padding: 15px 0 10px 0;
+  border-bottom: 4px solid #ef3e42; }
+  #nav #logo {
+    position: relative;
+    float: left;
+    margin-top: 5px; }
+  #nav ul {
+    margin: 40px 0 10px 0;
+    height: 100px;
+    vertical-align: center;
+    float: right; }
+    #nav ul li {
+      display: inline-block;
+      vertical-align: center;
+      list-style: none;
+      font-weight: normal;
+      padding-left: 25px;
+      position: relative; }
+      #nav ul li a {
+        text-decoration: none;
+        color: #a1a1a4;
+        font-size: 24px;
+        font-family: "Gotham Medium", Proxima Nova, sans-serif; }
+      #nav ul li a:active, #nav ul li a:hover, #nav ul li .active {
+        font-family: "Gotham Bold", Proxima Nova, sans-serif;
+        color: #ef3e42; }
+
+#homepage {
+  min-height: 750px; }
+  #homepage #this-week {
+    width: 760px; }
+    #homepage #this-week #sort-by {
+      top: 0px; }
+    #homepage #this-week #action-items .action-item {
+      height: 45px; }
+      #homepage #this-week #action-items .action-item a.action-button {
+        top: -4px;
+        margin-right: -20px; }
+  #homepage h2 {
+    font-size: 32px;
+    font-family: "Gotham Medium", Proxima Nova, sans-serif;
+    color: #454545;
+    float: left;
+    margin-top: -10px; }
+    #homepage h2 a {
+      color: #3a83d6;
+      margin-left: 10px; }
+
+#middle {
+  background-color: #f3f3f3;
+  width: 100%;
+  padding-top: 30px;
+  border-bottom: 5px solid #ef3e42; }
+  #middle #breadcrumbs span, #middle a {
+    font-size: 12px;
+    color: #a1a1a4; }
+  #middle h1 {
+    color: #454545;
+    font-family: "Gotham Medium", Proxima Nova, sans-serif;
+    font-size: 42px;
+    width: 500px;
+    float: left;
+    margin: 10px 0px 10px 0px; }
+    #middle h1 img {
+      margin-left: 5px; }
+  #middle #this-week {
+    position: relative;
+    float: left;
+    margin-top: 30px;
+    padding-right: 40px;
+    border-right: 1px solid rgba(161, 161, 164, 0.3); }
+    #middle #this-week #sort-by {
+      float: right;
+      font-family: "Gotham Medium", Proxima Nova, sans-serif;
+      color: #666666;
+      text-transform: uppercase; }
+      #middle #this-week #sort-by ul {
+        padding: 0;
+        float: right;
+        margin-top: -7px;
+        margin-left: 5px;
+        width: 100px; }
+        #middle #this-week #sort-by ul a {
+          text-decoration: none;
+          color: white; }
+        #middle #this-week #sort-by ul li {
+          color: white;
+          background-color: #666666;
+          padding: 7px 7px 5px 7px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          border-radius: 5px;
+          font-family: "Gotham Medium", Proxima Nova, sans-serif;
+          color: white;
+          text-transform: uppercase;
+          font-size: 12px; }
+          #middle #this-week #sort-by ul li ul {
+            padding: 0px;
+            display: none;
+            position: absolute;
+            z-index: 900;
+            margin-top: 0px;
+            margin-left: -7px; }
+            #middle #this-week #sort-by ul li ul li {
+              font-family: "Gotham Medium", Proxima Nova, sans-serif;
+              color: white;
+              text-transform: uppercase;
+              font-size: 12px;
+              display: block;
+              -webkit-border-radius: 0px;
+              -moz-border-radius: 0px;
+              -ms-border-radius: 0px;
+              border-radius: 0px; }
+            #middle #this-week #sort-by ul li ul :nth-child(2) {
+              -webkit-border-bottom-right-radius: 5px;
+              -webkit-border-bottom-left-radius: 5px;
+              -moz-border-radius-bottomright: 5px;
+              -moz-border-radius-bottomleft: 5px;
+              border-bottom-right-radius: 5px;
+              border-bottom-left-radius: 5px; }
+        #middle #this-week #sort-by ul li:hover > ul {
+          display: list-item; }
+    #middle #this-week #action-items {
+      clear: both;
+      width: 100%; }
+      #middle #this-week #action-items .action-item {
+        padding: 20px 5px 5px 20px;
+        background-color: white;
+        margin-bottom: 20px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+        box-shadow: 0 0 6px #c3c3c3; }
+        #middle #this-week #action-items .action-item .action-item-checkbox {
+          -webkit-appearance: none;
+          background-color: #ffffff;
+          border: 2px solid #666666;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+          padding: 13px;
+          margin: 0 7px -5px 0;
+          border-radius: 4px;
+          display: inline-block;
+          position: relative;
+          float: left; }
+        #middle #this-week #action-items .action-item .action-item-checkbox:focus {
+          outline: none; }
+        #middle #this-week #action-items .action-item .action-item-checkbox:checked {
+          color: #f3f3f3;
+          background-color: #ffffff;
+          border: 2px solid #666666;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+          padding: 13px;
+          margin: 0 7px -5px 0;
+          border-radius: 4px;
+          display: inline-block;
+          position: relative; }
+        #middle #this-week #action-items .action-item .action-item-checkbox:checked:active {
+          color: #f3f3f3;
+          background-color: #ffffff;
+          border: 2px solid #666666;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+          padding: 13px;
+          margin: 0 7px -5px 0;
+          border-radius: 4px;
+          display: inline-block;
+          position: relative; }
+        #middle #this-week #action-items .action-item .action-item-checkbox:checked:after {
+          content: url("../images/checkmark.png");
+          font-size: 21px;
+          position: absolute;
+          top: 0px;
+          left: 3px;
+          color: #cecece; }
+        #middle #this-week #action-items .action-item img {
+          float: left;
+          margin-right: 10px; }
+        #middle #this-week #action-items .action-item .action-item-corner {
+          position: relative;
+          float: right;
+          top: -20px;
+          right: -15px; }
+        #middle #this-week #action-items .action-item #action-item-text {
+          width: 450px;
+          float: left;
+          margin-top: 3px; }
+          #middle #this-week #action-items .action-item #action-item-text a {
+            text-decoration: none; }
+            #middle #this-week #action-items .action-item #action-item-text a :hover {
+              font-style: italic; }
+        #middle #this-week #action-items .action-item h3 {
+          margin-top: 5px;
+          font-family: "Gotham Bold", Proxima Nova, sans-serif;
+          font-size: 24px;
+          display: inline; }
+        #middle #this-week #action-items .action-item h4 {
+          margin-top: 2px;
+          margin-left: 5px;
+          display: inline;
+          font-family: "Gotham Bold", Proxima Nova, sans-serif;
+          font-size: 16px; }
+        #middle #this-week #action-items .action-item span {
+          display: block;
+          margin-top: 7px;
+          font-family: Arial, sans-serif;
+          color: #666666;
+          font-size: 16px;
+          line-height: 20px; }
+        #middle #this-week #action-items .action-item a.action-button {
+          position: relative;
+          float: right;
+          box-shadow: 0 0 6px #c3c3c3;
+          width: 170px;
+          text-decoration: none;
+          height: 17px;
+          padding: 7px 7px 15px 20px;
+          color: white;
+          font-size: 24px;
+          font-family: "Gotham Bold", Proxima Nova, sans-serif;
+          -webkit-border-radius: 7px;
+          -moz-border-radius: 7px;
+          -ms-border-radius: 7px;
+          border-radius: 7px; }
+          #middle #this-week #action-items .action-item a.action-button img {
+            float: right;
+            margin-right: 5px;
+            height: 17px;
+            margin-top: 4px; }
+      #middle #this-week #action-items .action-item-red h3, #middle #this-week #action-items .action-item-red h4 {
+        color: #ef3e42; }
+      #middle #this-week #action-items .action-item-red .action-button {
+        background-color: #ef3e42; }
+      #middle #this-week #action-items .action-item-orange h3, #middle #this-week #action-items .action-item-orange h4 {
+        color: #ff8429; }
+      #middle #this-week #action-items .action-item-orange .action-button {
+        background-color: #ff8429; }
+      #middle #this-week #action-items .action-item-yellow h3, #middle #this-week #action-items .action-item-yellow h4 {
+        color: #ffb910; }
+      #middle #this-week #action-items .action-item-yellow .action-button {
+        background-color: #ffb910; }
+
+#actions-completed {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #666666; }
+
+#actions-completed a {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #3a83d6; }
+
+#homepage #sidebar {
+  width: 415px;
+  padding-top: 30px; }
+  #homepage #sidebar #seedling {
+    clear: both;
+    background-color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #c3c3c3;
+    height: 220px;
+    padding: 20px 20px 20px 20px; }
+    #homepage #sidebar #seedling span {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      color: #666666;
+      margin-top: 10px;
+      font-style: italic; }
+  #homepage #sidebar #badges {
+    position: relative;
+    margin-top: 20px;
+    box-shadow: 0 0 6px #c3c3c3; }
+    #homepage #sidebar #badges table {
+      width: 100%; }
+      #homepage #sidebar #badges table tr {
+        width: 100%;
+        height: 35px;
+        background-color: white;
+        box-shadow: 0 0 6px #c3c3c3;
+        border-bottom: 1px solid #c3c3c3; }
+        #homepage #sidebar #badges table tr :first-child {
+          width: 40px;
+          padding: 2px 5px 2px 5px; }
+          #homepage #sidebar #badges table tr :first-child img {
+            width: 34px; }
+        #homepage #sidebar #badges table tr :nth-child(2) {
+          width: 220px; }
+          #homepage #sidebar #badges table tr :nth-child(2) h6 {
+            font-family: "Gotham Bold", Proxima Nova, sans-serif;
+            color: #454545;
+            font-size: 18px;
+            width: 180px;
+            margin: 5px 2px 0px 5px;
+            padding: 0px; }
+          #homepage #sidebar #badges table tr :nth-child(2) p {
+            width: 180px;
+            font-size: 12px;
+            margin: 0px 2px 2px 5px;
+            font-family: "Gotham Bold Italic", Proxima Nova, sans-serif;
+            color: #666666; }
+        #homepage #sidebar #badges table tr :nth-child(3) {
+          width: 140px;
+          padding: 10px; }
+          #homepage #sidebar #badges table tr :nth-child(3) #more-info-button {
+            width: 105px;
+            background-color: #ef3e42;
+            position: relative;
+            float: right;
+            box-shadow: 0 0 6px #c3c3c3;
+            text-decoration: none;
+            padding: 10px 7px 7px 20px;
+            height: 15px;
+            margin-top: -20px;
+            color: white;
+            font-size: 15px;
+            font-family: "Gotham Bold", Proxima Nova, sans-serif;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -ms-border-radius: 7px;
+            border-radius: 7px; }
+            #homepage #sidebar #badges table tr :nth-child(3) #more-info-button img {
+              float: right;
+              margin-right: 5px;
+              width: 7px;
+              margin-top: -2px; }
+
+#sidebar {
+  position: relative;
+  float: left;
+  margin-left: 20px; }
+
+footer {
+  text-align: center;
+  width: 100%;
+  padding: 30px 0 30px 0;
+  font-family: "Gotham Medium", Proxima Nova, sans-serif;
+  font-size: 11px;
+  color: #666666; }
+
+@media all and (max-width: 1275px) {
+  #nav ul {
+    position: relative;
+    float: right;
+    width: 70%; }
+
+  #nav ul li {
+    position: relative;
+    float: left; }
+
+  #homepage {
+    height: 1300px; }
+
+  #take-action {
+    height: 1300px; }
+    #take-action #sidebar {
+      width: 900px; }
+      #take-action #sidebar #filters {
+        float: left;
+        margin-left: 100px;
+        top: -10px;
+        display: inline; } }
+@media all and (max-width: 926px) {
+  #nav ul {
+    position: relative;
+    float: right;
+    width: 70%;
+    top: -100px; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,59 @@
+$red: rgb(239,62,66);
+$yellow-light: rgb(255,247,163);
+$yellow: rgb(255,185,16);
+$orange: rgb(255,132,41);
+$gray: rgb(161,161,164);
+$light-gray: rgb(243,243,243);
+$med-gray: rgb(102,102,102);
+$dark-gray: rgb(69,69,69);
+$blue: rgb(58,131,214);
+
+
+$Gotham-medium: 'Gotham Medium', Proxima Nova, sans-serif;
+$Gotham-bold: 'Gotham Bold', Proxima Nova, sans-serif;
+$Gotham-bold-italic: 'Gotham Bold Italic', Proxima Nova, sans-serif;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin checkbox {
+	-webkit-appearance: none;
+	background-color: #ffffff;
+	border: 2px solid $med-gray;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 13px;
+	margin: 0 7px -5px 0;
+	border-radius: 4px;
+	display: inline-block;
+	position: relative;
+}
+
+@mixin checkbox-checked {
+	color: $light-gray;
+	background-color: #ffffff;
+	border: 2px solid $med-gray;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 13px;
+	margin: 0 7px -5px 0;
+	border-radius: 4px;
+	display: inline-block;
+	position: relative;
+}
+
+@mixin checkbox-checked-after {
+		content: url('../images/checkmark.png');
+		font-size: 21px;
+		position: absolute;
+		top: 0px;
+		left: 3px;
+		color: #cecece;
+}
+
+@mixin box-shadow {
+	box-shadow: 0 0 6px #c3c3c3;
+}
+

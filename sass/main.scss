@@ -1,0 +1,477 @@
+@import 'presets';
+@import 'takeaction';
+
+
+.container {
+	max-width: 1240px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#login {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background-color: $red;
+	ul {
+		width: 100%;
+		padding: 15px 0 10px 0;
+		margin: 0 auto;
+		li {
+			display: inline-block;
+			vertical-align: top;
+			list-style: none;
+			font-weight: normal;
+			float: right;
+		}
+		:first-child {
+			font-family: $Gotham-medium;
+			font-size: 13px;
+			color: white;
+			float: left;
+			a {
+				text-decoration: none;
+			}
+			img {
+				margin-left: 5px;
+			}
+		}
+		:nth-child(6) {
+			color: white;
+			font-size: 12px;
+			font-family: $Gotham-bold;
+			margin: 0 10px 0 10px;
+		}
+		:nth-child(4), :nth-child(5) {
+			color: $yellow-light;
+			text-decoration: underline;
+			font-size: 12px;
+			font-family: $Gotham-bold;
+			margin: 0 10px 0 10px;
+		}
+		:nth-child(3) {
+			margin: -10px 10px 0 10px;
+		}
+		:nth-child(2) {
+			margin-top: -20px;
+		}
+	}
+}
+
+#nav {
+	position: relative;
+	width: 100%;
+	height: 120px;
+	padding: 15px 0 10px 0;
+	border-bottom: 4px solid $red;
+	#logo {
+		position: relative;
+		float: left;
+		margin-top: 5px;
+	}
+	ul {
+		margin: 40px 0 10px 0;
+		height: 100px;
+		vertical-align: center;
+		float: right;
+		li {
+			display: inline-block;
+			vertical-align: center;
+			list-style: none;
+			font-weight: normal;
+			padding-left: 25px;
+			position: relative;
+			a {
+				text-decoration: none;
+				color: $gray;
+				font-size: 24px;
+				font-family: $Gotham-medium;
+			}
+			a:active, a:hover, .active {
+				font-family: $Gotham-bold;
+				color: $red;
+			}
+		}
+	}
+}
+
+#homepage {
+	min-height: 750px;
+	#this-week {
+		width: 760px;
+		#sort-by {
+			top: 0px;
+		}
+		#action-items {
+			.action-item {
+				height: 45px;
+				a.action-button {
+					top: -4px;
+					margin-right: -20px;
+				}
+			}
+		}
+	}
+	h2 {
+			font-size: 32px;
+			font-family: $Gotham-medium;
+			color: $dark-gray;
+			float: left;
+			margin-top: -10px;
+			a {
+				color: $blue;
+				margin-left: 10px;
+			}
+		}
+}
+
+#middle {
+	background-color: $light-gray;
+	width: 100%;
+	padding-top: 30px;
+	border-bottom: 5px solid $red;
+	#breadcrumbs span, a {
+		font-size: 12px;
+		color: $gray;
+	}
+	h1 {
+		color: $dark-gray;
+		font-family: $Gotham-medium;
+		font-size: 42px;
+		width: 500px;
+		float: left;
+		margin: 10px 0px 10px 0px;
+		img {
+			margin-left: 5px;
+		}
+	}
+	#this-week {
+		position: relative;
+		float: left;
+		margin-top: 30px;
+		padding-right: 40px;
+		border-right: 1px solid rgba($gray,.3);
+		
+		#sort-by {
+			float: right;
+			
+			font-family: $Gotham-medium;
+			color: $med-gray;
+			text-transform: uppercase;
+			ul {
+				padding: 0;
+				float: right;
+				margin-top: -7px;
+				margin-left: 5px;
+				width: 100px;
+				a {
+					text-decoration: none;
+					color: white;
+				}
+				li {
+					color: white;
+					background-color: $med-gray;
+					padding: 7px 7px 5px 7px;
+					@include border-radius(5px);
+					font-family: $Gotham-medium;
+					color: white;
+					text-transform: uppercase;
+					font-size: 12px;
+					ul {
+						padding: 0px;
+						display: none;
+						position: absolute;
+						z-index: 900;
+						margin-top: 0px;
+						margin-left: -7px;
+						li {
+							font-family: $Gotham-medium;
+							color: white;
+							text-transform: uppercase;
+							font-size: 12px;
+							display: block;
+							@include border-radius(0px);
+						}
+						:nth-child(2) {
+							-webkit-border-bottom-right-radius: 5px;
+							-webkit-border-bottom-left-radius: 5px;
+							-moz-border-radius-bottomright: 5px;
+							-moz-border-radius-bottomleft: 5px;
+							border-bottom-right-radius: 5px;
+							border-bottom-left-radius: 5px;
+						}
+					}
+				}
+				li:hover > ul {
+					display:list-item;
+				}
+			}
+			
+		}
+		#action-items {
+			clear: both;
+			width: 100%;
+			.action-item {
+				
+				padding: 20px 5px 5px 20px;
+				background-color: white;
+				margin-bottom: 20px;
+				@include border-radius(5px);
+				@include box-shadow;
+				.action-item-checkbox {
+					@include checkbox;
+					float: left;
+				}
+				.action-item-checkbox:focus { 
+					outline: none; 
+				}
+				.action-item-checkbox:checked {
+					@include checkbox-checked;
+				}
+				.action-item-checkbox:checked:active {
+					@include checkbox-checked;
+				}
+				.action-item-checkbox:checked:after {
+					@include checkbox-checked-after;
+				}
+				img {
+					float: left;
+					margin-right: 10px;
+				}
+				.action-item-corner {
+					position: relative;
+					float: right;
+					top: -20px;
+					right: -15px;
+				}
+				#action-item-text {
+					a {
+						text-decoration: none;
+						:hover {
+							font-style: italic;
+						}
+					}
+					width: 450px;
+					float: left;
+					margin-top: 3px;
+				}
+				h3 {
+					margin-top: 5px;
+					font-family: $Gotham-bold;
+					font-size: 24px;
+					display: inline;
+				}
+				h4 {
+					margin-top: 2px;
+					margin-left: 5px;
+					display: inline;
+					font-family: $Gotham-bold;
+					font-size: 16px;
+				}
+				span {
+					display: block;
+					margin-top: 7px;
+					font-family: Arial, sans-serif;
+					color: $med-gray;
+					font-size: 16px;
+					line-height: 20px;
+				}
+				a.action-button {
+					position: relative;
+					float: right;
+					@include box-shadow;
+					width: 170px;
+					text-decoration: none;
+					height: 17px;
+					padding: 7px 7px 15px 20px;
+					color: white;
+					font-size: 24px;
+					font-family: $Gotham-bold;
+					@include border-radius(7px);
+					img {
+						float: right;
+						margin-right: 5px;
+						height: 17px;
+						margin-top: 4px;
+					}
+				}	
+			}
+			.action-item-red {
+				h3, h4 {
+					color: $red;
+				}
+				.action-button {
+					background-color: $red;
+				}
+			}
+			.action-item-orange {
+				h3, h4 {
+					color: $orange;
+				}
+				.action-button {
+					background-color: $orange;
+				}
+			}
+			.action-item-yellow {
+				h3, h4 {
+					color: $yellow;
+				}
+				.action-button {
+					background-color: $yellow;
+				}
+			}
+		}
+
+	}
+}
+#actions-completed {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: $med-gray;
+}
+#actions-completed a {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: $blue;
+}
+
+#homepage {
+	#sidebar {
+		width: 415px;
+		padding-top: 30px;
+		#seedling {
+			clear: both;
+			background-color: white;
+			@include border-radius(5px);
+			@include box-shadow;
+			height: 220px;
+			padding: 20px 20px 20px 20px;
+			span {
+				font-family: Arial, sans-serif;
+				font-size: 15px;
+				color: $med-gray;
+				margin-top: 10px;
+				font-style: italic;
+			}
+		}
+		#badges {
+			position: relative;
+			margin-top: 20px;
+			@include box-shadow;
+			table {
+				width: 100%;
+				tr {
+					width: 100%;
+					height: 35px;
+					background-color: white;
+					@include box-shadow;
+					border-bottom: 1px solid #c3c3c3;
+					:first-child {
+						width: 40px;
+						img {
+							width: 34px;
+						}
+						padding: 2px 5px 2px 5px;
+					}
+					:nth-child(2) {
+						width: 220px;
+						
+						h6 {
+							font-family: $Gotham-bold;
+							color: $dark-gray;
+							font-size: 18px;
+							width: 180px;
+							margin: 5px 2px 0px 5px;
+							padding: 0px;
+						}
+						p {
+							width: 180px;
+							font-size: 12px;
+							margin: 0px 2px 2px 5px;
+							font-family: $Gotham-bold-italic;
+							color: $med-gray;
+						}
+					}
+					:nth-child(3) {
+						width: 140px;
+						padding: 10px;
+						#more-info-button {
+							width: 105px;
+							background-color: $red;
+							position: relative;
+							float: right;
+							@include box-shadow;
+							text-decoration: none;
+							padding: 10px 7px 7px 20px;
+							height: 15px;
+							margin-top: -20px;
+							color: white;
+							font-size: 15px;
+							font-family: $Gotham-bold;
+							@include border-radius(7px);
+							img {
+								float: right;
+								margin-right: 5px;
+								width: 7px;
+								margin-top: -2px;
+							}
+						}
+						
+					}
+				}
+			}
+		}
+	}
+}
+#sidebar {
+	position: relative;
+	float: left;
+	margin-left: 20px;
+}
+
+footer {
+	text-align: center;
+	width: 100%;
+	padding: 30px 0 30px 0;
+	font-family: $Gotham-medium;
+	font-size: 11px;
+	color: $med-gray;
+}
+
+@media all and (max-width:1275px) {
+	#nav ul {
+		position: relative;
+		float: right;
+		width: 70%;
+	}
+	#nav ul li {
+		position: relative;
+		float: left;
+	}
+	#homepage {
+		height: 1300px;
+
+	}
+	#take-action {
+		height: 1300px;
+		#sidebar {
+			width: 900px;
+			#filters {
+				float: left;
+				margin-left: 100px;
+				top: -10px;
+				display: inline;
+			}
+		}
+	}
+}
+@media all and (max-width:926px) {
+	#nav ul {
+		position: relative;
+		float: right;
+		width: 70%;
+		top: -100px;
+	}
+}	
